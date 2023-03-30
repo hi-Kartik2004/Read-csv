@@ -1,6 +1,6 @@
 <?php
 require_once('php/send_code.php');
-session_start();
+// session_start();
 
 // Sending email
 if ((isset($_SESSION['senderName']) || isset($_SESSION['senderName2'])) && isset($_POST['email'])  && isset($_SESSION['senderPassword'])  && isset($_SESSION['senderPhone'])  && isset($_SESSION['senderEmail'])) {

@@ -1,6 +1,6 @@
 <?php
 // error_reporting(0);
-session_start();
+// session_start();
 
 if (isset($_SESSION['csv_data'])) {
     print_r($_SESSION['csv_data']);
@@ -84,7 +84,7 @@ function sendEmail($subject = "IEEE UVCE")
                 $mail->isSMTP();                                            //Send using SMTP
                 $mail->Host       = 'smtp.gmail.com';        //gmail             //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                $mail->Username   = "";      //Gmail userid              //SMTP username
+                $mail->Username   = "hi.kartikeyasaini@gmail.com";      //Gmail userid              //SMTP username
                 $mail->Password   = "";                               //SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`

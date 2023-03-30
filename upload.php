@@ -50,7 +50,7 @@ if (isset($_POST['import'])) {
                 //     echo "Record Insertion Failed for Column data" . $data[$index];
                 // }
             }
-
+            //print_r($_SESSION['csv_data']);
             if (count($_SESSION['csv_data']) == $ran) {
                 header("location: csv.php");
             } else {
